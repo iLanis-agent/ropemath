@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rope Math - app</title>
+<style>
+  :root { --accent:#6b2a5b; --ink:#26101f; --paper:#faf2f7; --soft:#f1dfeb; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2rem 1.2rem; }
+  h1 { font-size:1.8rem; color:var(--accent); }
+  .boundary { margin:1rem 0 1.4rem; }
+  .panel { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1rem 1.1rem; margin-bottom:1.1rem; }
+  h2 { font-size:1.1rem; margin-bottom:.6rem; }
+  p.note { font-size:.9rem; margin-bottom:.4rem; }
+  label { display:block; font-size:.9rem; margin:.45rem 0 .1rem; }
+  input { width:100%; padding:.45rem .55rem; font-size:1rem; border:1px solid #d3a9c6; border-radius:6px; background:#fff; color:var(--ink); }
+  .row2 { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+  .out { margin-top:.7rem; font-size:.98rem; background:#fff; border:1px dashed #d3a9c6; border-radius:6px; padding:.6rem .7rem; min-height:2.4rem; overflow-wrap:anywhere; }
+  .out.err { border-color:#b03030; color:#8a1f1f; }
+  footer { margin-top:1.8rem; font-size:.85rem; color:#9c6a8f; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Rope Math</h1>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    This page counts a rope cutting job with multiplication, division and rounding-up: the pieces a spool cuts, the spools the job takes, the cost a piece, and the seconds the cuts take. It uses no named constants. The meters, the piece length, the spool yield, the spool price and the cutting speed are yours to decide and read off your own spools, bench and invoices. It applies the counting as written, so it has not seen your rope, your knife or your knots and does not know whether the rope will really measure out, the ends will fray or the price will hold, and it gives no verdict that a spool is worth its price or a rope is right for a load. Every number here is your own entry.
+  </div>
+
+  <div class="panel">
+    <h2>The pieces truth</h2>
+    <p class="note">Pieces: the meters divided by the meters a piece, rounded down, with the meters left over.</p>
+    <div class="row2"><div><label for="p-n">Meters</label><input id="p-n" type="text" value="100"></div><div><label for="p-p">Meters a piece</label><input id="p-p" type="text" value="6"></div></div>
+    <div class="out" id="p-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The spools truth</h2>
+    <p class="note">Spools: the pieces divided by the pieces a spool, rounded up, with what the last spool gives.</p>
+    <div class="row2"><div><label for="s-n">Pieces</label><input id="s-n" type="text" value="100"></div><div><label for="s-p">Pieces a spool</label><input id="s-p" type="text" value="16"></div></div>
+    <div class="out" id="s-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The cost truth</h2>
+    <p class="note">Cost: the spools times the spool price, to the cent, and spread over the pieces.</p>
+    <div class="row2"><div><label for="k-s">Spools</label><input id="k-s" type="text" value="7"></div><div><label for="k-p">Spool price ($)</label><input id="k-p" type="text" value="24.99"></div></div>
+    <div class="row2"><div><label for="k-n">Pieces</label><input id="k-n" type="text" value="100"></div></div>
+    <div class="out" id="k-out"></div>
+  </div>
+  <div class="panel">
+    <h2>The time truth</h2>
+    <p class="note">Time: the cuts times the seconds a cut, in seconds and in minutes and seconds.</p>
+    <div class="row2"><div><label for="t-c">Cuts</label><input id="t-c" type="text" value="112"></div><div><label for="t-s">Seconds a cut</label><input id="t-s" type="text" value="8"></div></div>
+    <div class="out" id="t-out"></div>
+  </div>
+
+  <footer>Rope Math is exact arithmetic over the numbers you enter. <a href="index.html">Why it exists</a>.</footer>
+</main>
+<script src="engine.js"></script>
+<script>
+  function show(id, fn) {
+    const out = document.getElementById(id);
+    try { out.textContent = fn(); out.classList.remove("err"); }
+    catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function recalc() {
+    const v = (id) => document.getElementById(id).value;
+    show("p-out", () => piecesTruth(v("p-n"), v("p-p")));
+    show("s-out", () => spoolsTruth(v("s-n"), v("s-p")));
+    show("k-out", () => costTruth(v("k-s"), v("k-p"), v("k-n")));
+    show("t-out", () => timeTruth(v("t-c"), v("t-s")));
+  }
+  document.querySelectorAll("input").forEach((el) => {
+    el.addEventListener("input", recalc);
+    el.addEventListener("change", recalc);
+  });
+  recalc();
+</script>
+</body>
+</html>
