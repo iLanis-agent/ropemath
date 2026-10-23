@@ -1,0 +1,971 @@
+{
+ "cases": [
+  {
+   "fn": "pieces",
+   "args": [
+    "100",
+    "6"
+   ],
+   "expect": "The 100 meters at 6 meters a piece cut 16 full pieces with 4 meters left over."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "100",
+    "16"
+   ],
+   "expect": "The 100 pieces at 16 pieces a spool take 7 spools, the last spool giving 4 pieces."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "7",
+    "24.99",
+    "100"
+   ],
+   "expect": "The 7 spools at $24.99 a spool come to $174.93, $1.75 a piece."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "112",
+    "8"
+   ],
+   "expect": "The 112 cuts at 8 seconds a cut take 896 seconds, 14 minutes 56 seconds."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "1",
+    "1"
+   ],
+   "expect": "The 1 meter at 1 meter a piece cuts 1 full piece with 0 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "96",
+    "6"
+   ],
+   "expect": "The 96 meters at 6 meters a piece cut 16 full pieces with 0 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "100000",
+    "10000"
+   ],
+   "expect": "The 100000 meters at 10000 meters a piece cut 10 full pieces with 0 meters left over."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "1",
+    "1"
+   ],
+   "expect": "The 1 piece at 1 piece a spool takes 1 spool, the last spool giving 1 piece."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "96",
+    "16"
+   ],
+   "expect": "The 96 pieces at 16 pieces a spool take 6 spools, the last spool giving 16 pieces."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "1000000",
+    "10000"
+   ],
+   "expect": "The 1000000 pieces at 10000 pieces a spool take 100 spools, the last spool giving 10000 pieces."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "1",
+    "0.01",
+    "1"
+   ],
+   "expect": "The 1 spool at $0.01 a spool comes to $0.01, $0.01 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "100000",
+    "999.99",
+    "1000000"
+   ],
+   "expect": "The 100000 spools at $999.99 a spool come to $99999000.00, $100.00 a piece."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "1",
+    "1"
+   ],
+   "expect": "The 1 cut at 1 second a cut takes 1 second, 0 minutes 1 second."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "60",
+    "60"
+   ],
+   "expect": "The 60 cuts at 60 seconds a cut take 3600 seconds, 60 minutes 0 seconds."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "1000000",
+    "1000"
+   ],
+   "expect": "The 1000000 cuts at 1000 seconds a cut take 1000000000 seconds, 16666666 minutes 40 seconds."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "30060",
+    "7305"
+   ],
+   "expect": "The 30060 meters at 7305 meters a piece cut 4 full pieces with 840 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "58406",
+    "6040"
+   ],
+   "expect": "The 58406 meters at 6040 meters a piece cut 9 full pieces with 4046 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "75434",
+    "4421"
+   ],
+   "expect": "The 75434 meters at 4421 meters a piece cut 17 full pieces with 277 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "44060",
+    "8810"
+   ],
+   "expect": "The 44060 meters at 8810 meters a piece cut 5 full pieces with 10 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "98608",
+    "655"
+   ],
+   "expect": "The 98608 meters at 655 meters a piece cut 150 full pieces with 358 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "58418",
+    "8967"
+   ],
+   "expect": "The 58418 meters at 8967 meters a piece cut 6 full pieces with 4616 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "51065",
+    "9855"
+   ],
+   "expect": "The 51065 meters at 9855 meters a piece cut 5 full pieces with 1790 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "37876",
+    "1980"
+   ],
+   "expect": "The 37876 meters at 1980 meters a piece cut 19 full pieces with 256 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "14975",
+    "1278"
+   ],
+   "expect": "The 14975 meters at 1278 meters a piece cut 11 full pieces with 917 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "43667",
+    "1698"
+   ],
+   "expect": "The 43667 meters at 1698 meters a piece cut 25 full pieces with 1217 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "96998",
+    "21"
+   ],
+   "expect": "The 96998 meters at 21 meters a piece cut 4618 full pieces with 20 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "84317",
+    "9451"
+   ],
+   "expect": "The 84317 meters at 9451 meters a piece cut 8 full pieces with 8709 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "44337",
+    "4705"
+   ],
+   "expect": "The 44337 meters at 4705 meters a piece cut 9 full pieces with 1992 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "76607",
+    "4381"
+   ],
+   "expect": "The 76607 meters at 4381 meters a piece cut 17 full pieces with 2130 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "14046",
+    "3436"
+   ],
+   "expect": "The 14046 meters at 3436 meters a piece cut 4 full pieces with 302 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "40928",
+    "8211"
+   ],
+   "expect": "The 40928 meters at 8211 meters a piece cut 4 full pieces with 8084 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "16464",
+    "6800"
+   ],
+   "expect": "The 16464 meters at 6800 meters a piece cut 2 full pieces with 2864 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "76908",
+    "559"
+   ],
+   "expect": "The 76908 meters at 559 meters a piece cut 137 full pieces with 325 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "45630",
+    "9989"
+   ],
+   "expect": "The 45630 meters at 9989 meters a piece cut 4 full pieces with 5674 meters left over."
+  },
+  {
+   "fn": "pieces",
+   "args": [
+    "19374",
+    "9448"
+   ],
+   "expect": "The 19374 meters at 9448 meters a piece cut 2 full pieces with 478 meters left over."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "551434",
+    "1251"
+   ],
+   "expect": "The 551434 pieces at 1251 pieces a spool take 441 spools, the last spool giving 994 pieces."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "573164",
+    "8953"
+   ],
+   "expect": "The 573164 pieces at 8953 pieces a spool take 65 spools, the last spool giving 172 pieces."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "693985",
+    "4505"
+   ],
+   "expect": "The 693985 pieces at 4505 pieces a spool take 155 spools, the last spool giving 215 pieces."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "911064",
+    "8130"
+   ],
+   "expect": "The 911064 pieces at 8130 pieces a spool take 113 spools, the last spool giving 504 pieces."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "98839",
+    "8984"
+   ],
+   "expect": "The 98839 pieces at 8984 pieces a spool take 12 spools, the last spool giving 15 pieces."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "472166",
+    "2754"
+   ],
+   "expect": "The 472166 pieces at 2754 pieces a spool take 172 spools, the last spool giving 1232 pieces."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "11445",
+    "7196"
+   ],
+   "expect": "The 11445 pieces at 7196 pieces a spool take 2 spools, the last spool giving 4249 pieces."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "268930",
+    "3576"
+   ],
+   "expect": "The 268930 pieces at 3576 pieces a spool take 76 spools, the last spool giving 730 pieces."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "692064",
+    "9248"
+   ],
+   "expect": "The 692064 pieces at 9248 pieces a spool take 75 spools, the last spool giving 7712 pieces."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "401890",
+    "1450"
+   ],
+   "expect": "The 401890 pieces at 1450 pieces a spool take 278 spools, the last spool giving 240 pieces."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "394945",
+    "2917"
+   ],
+   "expect": "The 394945 pieces at 2917 pieces a spool take 136 spools, the last spool giving 1150 pieces."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "850875",
+    "7868"
+   ],
+   "expect": "The 850875 pieces at 7868 pieces a spool take 109 spools, the last spool giving 1131 pieces."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "781782",
+    "1047"
+   ],
+   "expect": "The 781782 pieces at 1047 pieces a spool take 747 spools, the last spool giving 720 pieces."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "562244",
+    "6450"
+   ],
+   "expect": "The 562244 pieces at 6450 pieces a spool take 88 spools, the last spool giving 1094 pieces."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "929383",
+    "9189"
+   ],
+   "expect": "The 929383 pieces at 9189 pieces a spool take 102 spools, the last spool giving 1294 pieces."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "976095",
+    "5244"
+   ],
+   "expect": "The 976095 pieces at 5244 pieces a spool take 187 spools, the last spool giving 711 pieces."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "321283",
+    "3077"
+   ],
+   "expect": "The 321283 pieces at 3077 pieces a spool take 105 spools, the last spool giving 1275 pieces."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "99161",
+    "2829"
+   ],
+   "expect": "The 99161 pieces at 2829 pieces a spool take 36 spools, the last spool giving 146 pieces."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "129905",
+    "9085"
+   ],
+   "expect": "The 129905 pieces at 9085 pieces a spool take 15 spools, the last spool giving 2715 pieces."
+  },
+  {
+   "fn": "spools",
+   "args": [
+    "874491",
+    "9538"
+   ],
+   "expect": "The 874491 pieces at 9538 pieces a spool take 92 spools, the last spool giving 6533 pieces."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "4434",
+    "8.18",
+    "494158"
+   ],
+   "expect": "The 4434 spools at $8.18 a spool come to $36270.12, $0.07 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "76881",
+    "346.95",
+    "678663"
+   ],
+   "expect": "The 76881 spools at $346.95 a spool come to $26673862.95, $39.30 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "35008",
+    "14.02",
+    "176692"
+   ],
+   "expect": "The 35008 spools at $14.02 a spool come to $490812.16, $2.78 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "91559",
+    "157.24",
+    "842386"
+   ],
+   "expect": "The 91559 spools at $157.24 a spool come to $14396737.16, $17.09 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "84184",
+    "652.07",
+    "404374"
+   ],
+   "expect": "The 84184 spools at $652.07 a spool come to $54893860.88, $135.75 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "16360",
+    "856.84",
+    "695170"
+   ],
+   "expect": "The 16360 spools at $856.84 a spool come to $14017902.40, $20.16 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "65242",
+    "532.14",
+    "442817"
+   ],
+   "expect": "The 65242 spools at $532.14 a spool come to $34717877.88, $78.40 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "52297",
+    "583.08",
+    "359834"
+   ],
+   "expect": "The 52297 spools at $583.08 a spool come to $30493334.76, $84.74 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "77264",
+    "888.83",
+    "671619"
+   ],
+   "expect": "The 77264 spools at $888.83 a spool come to $68674561.12, $102.25 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "82309",
+    "720.38",
+    "373983"
+   ],
+   "expect": "The 82309 spools at $720.38 a spool come to $59293757.42, $158.55 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "88611",
+    "709.76",
+    "634422"
+   ],
+   "expect": "The 88611 spools at $709.76 a spool come to $62892543.36, $99.13 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "66339",
+    "68.97",
+    "640128"
+   ],
+   "expect": "The 66339 spools at $68.97 a spool come to $4575400.83, $7.15 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "7000",
+    "490.04",
+    "300452"
+   ],
+   "expect": "The 7000 spools at $490.04 a spool come to $3430280.00, $11.42 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "76222",
+    "668.49",
+    "731125"
+   ],
+   "expect": "The 76222 spools at $668.49 a spool come to $50953644.78, $69.69 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "56888",
+    "197.44",
+    "711445"
+   ],
+   "expect": "The 56888 spools at $197.44 a spool come to $11231966.72, $15.79 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "37674",
+    "922.3",
+    "693275"
+   ],
+   "expect": "The 37674 spools at $922.30 a spool come to $34746730.20, $50.12 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "64245",
+    "897.67",
+    "952915"
+   ],
+   "expect": "The 64245 spools at $897.67 a spool come to $57670809.15, $60.52 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "51870",
+    "16.66",
+    "904807"
+   ],
+   "expect": "The 51870 spools at $16.66 a spool come to $864154.20, $0.96 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "36846",
+    "640.87",
+    "375600"
+   ],
+   "expect": "The 36846 spools at $640.87 a spool come to $23613496.02, $62.87 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "67695",
+    "837.75",
+    "501305"
+   ],
+   "expect": "The 67695 spools at $837.75 a spool come to $56711486.25, $113.13 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "20754",
+    "180.86",
+    "340423"
+   ],
+   "expect": "The 20754 spools at $180.86 a spool come to $3753568.44, $11.03 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "10586",
+    "371.43",
+    "279725"
+   ],
+   "expect": "The 10586 spools at $371.43 a spool come to $3931957.98, $14.06 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "39488",
+    "558.9",
+    "164199"
+   ],
+   "expect": "The 39488 spools at $558.90 a spool come to $22069843.20, $134.41 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "73022",
+    "776.96",
+    "466022"
+   ],
+   "expect": "The 73022 spools at $776.96 a spool come to $56735173.12, $121.74 a piece."
+  },
+  {
+   "fn": "cost",
+   "args": [
+    "74513",
+    "220.12",
+    "90766"
+   ],
+   "expect": "The 74513 spools at $220.12 a spool come to $16401801.56, $180.70 a piece."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "483935",
+    "792"
+   ],
+   "expect": "The 483935 cuts at 792 seconds a cut take 383276520 seconds, 6387942 minutes 0 seconds."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "75056",
+    "348"
+   ],
+   "expect": "The 75056 cuts at 348 seconds a cut take 26119488 seconds, 435324 minutes 48 seconds."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "102140",
+    "396"
+   ],
+   "expect": "The 102140 cuts at 396 seconds a cut take 40447440 seconds, 674124 minutes 0 seconds."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "973896",
+    "683"
+   ],
+   "expect": "The 973896 cuts at 683 seconds a cut take 665170968 seconds, 11086182 minutes 48 seconds."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "631226",
+    "763"
+   ],
+   "expect": "The 631226 cuts at 763 seconds a cut take 481625438 seconds, 8027090 minutes 38 seconds."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "210947",
+    "629"
+   ],
+   "expect": "The 210947 cuts at 629 seconds a cut take 132685663 seconds, 2211427 minutes 43 seconds."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "136805",
+    "659"
+   ],
+   "expect": "The 136805 cuts at 659 seconds a cut take 90154495 seconds, 1502574 minutes 55 seconds."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "909434",
+    "109"
+   ],
+   "expect": "The 909434 cuts at 109 seconds a cut take 99128306 seconds, 1652138 minutes 26 seconds."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "631967",
+    "304"
+   ],
+   "expect": "The 631967 cuts at 304 seconds a cut take 192117968 seconds, 3201966 minutes 8 seconds."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "485222",
+    "679"
+   ],
+   "expect": "The 485222 cuts at 679 seconds a cut take 329465738 seconds, 5491095 minutes 38 seconds."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "591515",
+    "444"
+   ],
+   "expect": "The 591515 cuts at 444 seconds a cut take 262632660 seconds, 4377211 minutes 0 seconds."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "565486",
+    "697"
+   ],
+   "expect": "The 565486 cuts at 697 seconds a cut take 394143742 seconds, 6569062 minutes 22 seconds."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "778185",
+    "808"
+   ],
+   "expect": "The 778185 cuts at 808 seconds a cut take 628773480 seconds, 10479558 minutes 0 seconds."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "394078",
+    "43"
+   ],
+   "expect": "The 394078 cuts at 43 seconds a cut take 16945354 seconds, 282422 minutes 34 seconds."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "11625",
+    "205"
+   ],
+   "expect": "The 11625 cuts at 205 seconds a cut take 2383125 seconds, 39718 minutes 45 seconds."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "957624",
+    "357"
+   ],
+   "expect": "The 957624 cuts at 357 seconds a cut take 341871768 seconds, 5697862 minutes 48 seconds."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "148101",
+    "903"
+   ],
+   "expect": "The 148101 cuts at 903 seconds a cut take 133735203 seconds, 2228920 minutes 3 seconds."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "173248",
+    "439"
+   ],
+   "expect": "The 173248 cuts at 439 seconds a cut take 76055872 seconds, 1267597 minutes 52 seconds."
+  },
+  {
+   "fn": "time",
+   "args": [
+    "520973",
+    "763"
+   ],
+   "expect": "The 520973 cuts at 763 seconds a cut take 397502399 seconds, 6625039 minutes 59 seconds."
+  }
+ ],
+ "errors": [
+  [
+   "pieces",
+   [
+    "0",
+    "6"
+   ]
+  ],
+  [
+   "pieces",
+   [
+    "100001",
+    "6"
+   ]
+  ],
+  [
+   "pieces",
+   [
+    "2.5",
+    "6"
+   ]
+  ],
+  [
+   "pieces",
+   [
+    "100",
+    "0"
+   ]
+  ],
+  [
+   "pieces",
+   [
+    "100",
+    "10001"
+   ]
+  ],
+  [
+   "spools",
+   [
+    "0",
+    "16"
+   ]
+  ],
+  [
+   "spools",
+   [
+    "1000001",
+    "16"
+   ]
+  ],
+  [
+   "spools",
+   [
+    "100",
+    "0"
+   ]
+  ],
+  [
+   "spools",
+   [
+    "100",
+    "10001"
+   ]
+  ],
+  [
+   "spools",
+   [
+    "100",
+    "1.5"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "0",
+    "24.99",
+    "100"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "100001",
+    "24.99",
+    "100"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "7",
+    "0",
+    "100"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "7",
+    "24.995",
+    "100"
+   ]
+  ],
+  [
+   "cost",
+   [
+    "7",
+    "24.99",
+    "0"
+   ]
+  ],
+  [
+   "time",
+   [
+    "0",
+    "8"
+   ]
+  ],
+  [
+   "time",
+   [
+    "1000001",
+    "8"
+   ]
+  ],
+  [
+   "time",
+   [
+    "112",
+    "0"
+   ]
+  ],
+  [
+   "time",
+   [
+    "112",
+    "1001"
+   ]
+  ],
+  [
+   "time",
+   [
+    "112",
+    "8.5"
+   ]
+  ]
+ ]
+}
