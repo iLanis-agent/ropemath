@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rope Math - rope piece, spool, cost and time arithmetic</title>
+<style>
+  :root { --accent:#6b2a5b; --ink:#26101f; --paper:#faf2f7; --soft:#f1dfeb; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2.5rem 1.2rem; }
+  h1 { font-size:2.2rem; color:var(--accent); }
+  p.lede { font-size:1.12rem; margin:.9rem 0 1.6rem; }
+  .boundary { margin-bottom:1.6rem; }
+  section { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1.1rem 1.2rem; margin-bottom:1.2rem; }
+  h2 { font-size:1.18rem; margin-bottom:.5rem; }
+  section p { font-size:.98rem; }
+  a.btn { display:inline-block; margin-top:1.4rem; background:var(--accent); color:#fff; text-decoration:none; padding:.8rem 1.6rem; border-radius:999px; font-size:1.05rem; }
+  footer { margin-top:2.2rem; font-size:.85rem; color:#9c6a8f; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Rope Math</h1>
+  <p class="lede">The 100 meters at 6 meters a piece cut 16 full pieces with 4 meters left over.</p>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    Rope Math counts a rope cutting job with multiplication, division and rounding-up: the pieces a spool cuts, the spools the job takes, the cost a piece, and the seconds the cuts take. It uses no named constants. It applies the counting as written, so it has not seen your rope, your knife or your knots and does not know whether the rope will really measure out, the ends will fray or the price will hold, and it gives no verdict that a spool is worth its price or a rope is right for a load. Every number here is your own entry.
+  </div>
+  <p class="lede" style="font-size:1rem">Starting examples: a 100 meter spool, 6 meters a piece, 16 pieces a spool, $24.99 a spool and 8 seconds a cut.</p>
+  <section>
+    <h2>The spools truth</h2>
+    <p>The 100 pieces at 16 pieces a spool take 7 spools, the last spool giving 4 pieces.</p>
+  </section>
+  <section>
+    <h2>The cost truth</h2>
+    <p>The 7 spools at $24.99 a spool come to $174.93, $1.75 a piece.</p>
+  </section>
+  <section>
+    <h2>The time truth</h2>
+    <p>The 112 cuts at 8 seconds a cut take 896 seconds, 14 minutes 56 seconds.</p>
+  </section>
+  <a class="btn" href="app.html">Run your numbers</a>
+  <footer>Rope Math is exact arithmetic over the numbers you enter, nothing more.</footer>
+</main>
+</body>
+</html>
